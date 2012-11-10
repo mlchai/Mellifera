@@ -1,4 +1,19 @@
 /* CSS declarations go here */
+#barter_left {
+	float: left;
+}
+
+#current_barter {
+	float: left;
+}
+
+#description {
+	width: 400px;
+}
+
+#title {
+	width: 400px;
+}
 
 #login-buttons {
 	margin: 1em;

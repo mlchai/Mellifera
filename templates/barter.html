@@ -1,10 +1,28 @@
 <template name="barter">
+	<div id="barter_left">
 	<div><input type="text" id="title" /></div>
 	<div><textarea id="description" rows="3" cols="50"></textarea></div>
 	<div><input type="submit" value="click" /></div>
 	<div>
 	{{#each barters}}
-		<div>{{title}}: {{description}}</div>
+			<div data-id="{{_id}}" class="barter_item">
+			{{#if title}}
+				{{title}}
+			{{else}}
+				no title
+			{{/if}}
+			: {{description}}</div>
 	{{/each}}
 	</div>
+	</div>
+	
+	<div id="current_barter">
+		<div>
+			{{title2}}
+		</div>
+		<div>
+			{{description2}}
+		</div>
+	</div>
 </template>
+
