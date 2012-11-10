@@ -6,23 +6,3 @@
   {{loginButtons}}
 	{{> main}}
 </body>
-
-<template name="main">
-  {{#if loggedIn}}
-  <div class="container-fluid">
-	  <div class="row-fluid">
-	    <div class="span3">
-	    	{{> sidebarContent}}
-	    </div>
-	    <div id="page-content" class="span9">
-	    	{{#if accountDetailsPage}}
-		    	{{> accountDetails}}
-	    	{{/if}}
-	    	{{#if barterPage}}
-		    	{{> barter}}
-	    	{{/if}}
-	    </div>
-		</div>
-	</div>
-  {{/if}}
-</template>

@@ -1,3 +1,10 @@
 <template name="barter">
-	sdfasdfasdf
+	<div><input type="text" id="title" /></div>
+	<div><textarea id="description" rows="3" cols="50"></textarea></div>
+	<div><input type="submit" value="click" /></div>
+	<div>
+	{{#each barters}}
+		<div>{{title}}: {{description}}</div>
+	{{/each}}
+	</div>
 </template>

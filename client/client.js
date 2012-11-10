@@ -3,6 +3,7 @@ var d_ = function(str) {
     console.log(str);
 };
 
+
 Meteor.autosubscribe(function () {
   Meteor.subscribe('TimeAccounts');
 });
@@ -21,7 +22,7 @@ Meteor.autorun(function() {
 });
 
 TimeAccounts = new Meteor.Collection('TimeAccounts');
-Session.set('currentPage', 'accountDetails');
+Session.set('currentPage', 'barter');
 
 Helpers = {
   liabilityLimit: function() {
